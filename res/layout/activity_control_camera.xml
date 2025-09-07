@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true">
+	<androidx.appcompat.widget.Toolbar android:id="@id/switch_control_toolbar" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextColor="@color/colorWhite" />
+	<org.videolan.libvlc.util.VLCVideoLayout android:id="@id/video_layout" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/switch_control_toolbar" />
+	<ProgressBar android:layout_gravity="center" android:id="@id/progress" android:visibility="gone" android:layout_width="170.0dip" android:layout_height="170.0dip" />
+</RelativeLayout>

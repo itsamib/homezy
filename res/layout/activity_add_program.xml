@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:mstb="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<androidx.appcompat.widget.Toolbar android:id="@id/add_program_toolbar" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" mstb:titleTextColor="@color/colorWhite" />
+	<LinearLayout android:orientation="horizontal" android:id="@id/layout_program_title" android:background="#ffe2e2e2" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/add_program_toolbar">
+		<ImageView android:id="@id/program_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_av_timer_green_24dp" android:contentDescription="@null" />
+		<EditText android:id="@id/program_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:hint="@string/hint_program_name" android:singleLine="true" android:maxLength="15" android:layout_marginStart="20.0dip" />
+	</LinearLayout>
+	<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_program_title">
+		<RelativeLayout android:id="@id/layout_command" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true">
+			<com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/plus_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_white_24dp" android:layout_centerInParent="true" />
+			<include android:id="@id/view_selected_appliance" android:layout_width="70.0dip" android:layout_height="70.0dip" layout="@layout/list_item_switches" />
+		</RelativeLayout>
+		<LinearLayout android:orientation="vertical" android:id="@id/layout_fade_seekbar" android:paddingLeft="50.0dip" android:paddingTop="15.0dip" android:paddingRight="50.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_command" android:textDirection="rtl" android:layoutDirection="rtl">
+			<TextView android:id="@id/text_view_fade_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="اجرای تدریجی: 0 دقیقه" />
+			<SeekBar android:theme="@style/Theme.AppCompat.Light" android:id="@id/seek_bar_fade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:id="@id/layout_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_fade_seekbar" android:textDirection="ltr" android:layoutDirection="ltr">
+			<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+			<NumberPicker android:theme="@style/Theme.AppCompat.Light" android:id="@id/number_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+			<NumberPicker android:theme="@style/Theme.AppCompat.Light" android:id="@id/number_minute" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_time" android:layoutDirection="ltr">
+			<org.honorato.multistatetogglebutton.MultiStateToggleButton android:id="@id/mstb_day_friday" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_weight="1.0" mstb:mstbPrimaryColor="@color/coloRed" mstb:mstbSecondaryColor="@color/colorMstbBack" mstb:values="@array/last_day_abbr_week_array" />
+			<org.honorato.multistatetogglebutton.MultiStateToggleButton android:id="@id/mstb_week" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_weight="6.0" mstb:mstbPrimaryColor="@color/colorAccent" mstb:mstbSecondaryColor="@color/colorMstbBack" mstb:values="@array/last_abbr_week_array" />
+		</LinearLayout>
+" > "</RelativeLayout>
+</RelativeLayout>

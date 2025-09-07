@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:layout_gravity="right" android:id="@id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="لینک رسانه (RTSP, HTTP, ...)" fontPath="fonts/IRANSansMobile.ttf" />
+	<EditText android:theme="@style/Theme.AppCompat.Light" android:id="@id/edit_stream_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:inputType="textUri" android:textDirection="ltr" />
+	<TextView android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" android:text="در صورت نیاز نام کاربری و رمز ورود را وارد کنید:" fontPath="fonts/IRANSansMobile.ttf" />
+	<TextView android:layout_gravity="right" android:id="@id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="نام کاربری" fontPath="fonts/IRANSansMobile.ttf" />
+	<EditText android:theme="@style/Theme.AppCompat.Light" android:id="@id/edit_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:inputType="text" android:textDirection="ltr" />
+	<TextView android:layout_gravity="right" android:id="@id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رمز ورود" fontPath="fonts/IRANSansMobile.ttf" />
+	<EditText android:theme="@style/Theme.AppCompat.Light" android:id="@id/edit_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:inputType="textPassword" android:textDirection="ltr" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_above="@id/pin_lock_view" android:layout_centerHorizontal="true">
+		<TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="رمز خود را وارد کنید" android:textAlignment="center" />
+		<com.andrognito.pinlockview.IndicatorDots android:id="@id/indicator_dots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" app:dotDiameter="13.0dip" app:dotEmptyBackground="@drawable/indicator_empty_circle" app:dotSpacing="14.0dip" />
+	</LinearLayout>
+	<com.andrognito.pinlockview.PinLockView android:id="@id/pin_lock_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:keypadButtonSize="90.0dip" app:keypadTextSize="23.0sp" />
+</RelativeLayout>

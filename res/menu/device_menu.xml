@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:id="@id/item_lock_device" android:title="@string/item_lock_device" />
+	<item android:id="@id/item_set_bus_master" android:title="@string/item_set_bus_master" />
+	<item android:id="@id/item_inputs_status" android:title="@string/item_device_inputs_status" />
+	<item android:id="@id/item_inputs_setting" android:title="@string/item_device_inputs_setting" />
+	<item android:id="@id/item_remote_events_setting" android:title="@string/item_remote_events_setting" />
+	<item android:id="@id/item_notify" android:title="@string/item_device_notification" />
+	<item android:id="@id/item_network" android:title="@string/item_device_network" />
+	<item android:id="@id/item_update_local_ip" android:title="@string/item_update_local_ip" />
+	<item android:id="@id/item_setup_time" android:title="@string/item_setup_time" />
+	<item android:id="@id/item_connect_network" android:title="@string/item_device_connect_network" />
+	<item android:id="@id/item_remove_device" android:title="@string/item_remove_device" />
+	<item android:id="@id/item_update_device" android:title="@string/item_update_device" />
+</menu>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:gravity="center" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_header_height">
+		<TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="اعلان رویداد‌ها" fontPath="fonts/IRANSansMobile_Bold.ttf" />
+	</RelativeLayout>
+	<ImageView android:id="@id/titleSeparator" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="3.0dip" android:contentDescription="@null" />
+	<ScrollView android:id="@id/view_back" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text=" " android:layout_weight="1.0" />
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text=" " android:layout_weight="1.0" android:textAlignment="center" />
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="نام نمایشی" android:layout_weight="1.0" android:textAlignment="center" />
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۲" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۲" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۳" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۳" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۴" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۴" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۵" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۵" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۶" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۶" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۷" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_7" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۷" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۸" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_8" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۸" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۹" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_9" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۹" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۰" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_10" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۰" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۱" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_11" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۱" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۲" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_12" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۲" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۳" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_13" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۳" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۴" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_14" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۴" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۵" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_15" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۵" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۶" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_16" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۶" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۷" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_17" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۷" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۸" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_18" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۸" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۱۹" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_19" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۱۹" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="رویداد ۲۰" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/input_20" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<EditText android:gravity="center" android:id="@id/edit_input20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رویداد ۲۰" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<ImageView android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="5.0dip" android:contentDescription="@null" />
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="25.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="نوع اعلان: " android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/switch_notification_type_internet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" اینترنتی" />
+				</RelativeLayout>
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<Switch android:id="@id/switch_notification_type_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="پیامکی " />
+				</RelativeLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

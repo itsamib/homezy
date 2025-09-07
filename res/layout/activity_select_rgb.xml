@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
+	<androidx.appcompat.widget.Toolbar android:id="@id/add_scenarios_switch_toolbar" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextColor="@color/colorWhite" />
+	<ScrollView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<RelativeLayout android:id="@id/card_view_border" android:background="@drawable/bg_rounded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+				<androidx.cardview.widget.CardView android:id="@id/card_view_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:elevation="4.0dip" app:cardCornerRadius="4.0dip">
+					<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<RelativeLayout android:id="@id/view_title" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+							<TextView android:textSize="25.0sp" android:id="@id/text_view_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RGB 1" android:layout_centerInParent="true" />
+						</RelativeLayout>
+						<LinearLayout android:orientation="horizontal" android:id="@id/color_palette" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_title" android:layoutDirection="ltr">
+							<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<ImageView android:id="@id/img_r" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/r" android:onClick="circleImageCallBack" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_g" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/g" android:onClick="circleImageCallBack" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_b" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/b" android:onClick="circleImageCallBack" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_c" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/c" android:onClick="circleImageCallBack" android:contentDescription="@null" />
+							</LinearLayout>
+							<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+							<com.skydoves.colorpickerview.ColorPickerView android:layout_gravity="center_vertical" android:id="@id/colorPickerView" android:layout_width="180.0dip" android:layout_height="180.0dip" app:actionMode="last" app:palette="@drawable/colorwheel" app:selector="@drawable/wheel" />
+							<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+							<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<ImageView android:id="@id/img_power" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/power" android:onClick="circleImageCallBack" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_w" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/w" android:onClick="circleImageCallBack" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_y" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/y" android:onClick="circleImageCallBack" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_p" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/p" android:onClick="circleImageCallBack" android:contentDescription="@null" />
+							</LinearLayout>
+						</LinearLayout>
+						<RelativeLayout android:id="@id/brightnessLayout" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/color_palette" android:layoutDirection="ltr">
+							<ImageView android:padding="5.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/sun_low" android:layout_alignParentLeft="true" android:contentDescription="@null" />
+							<SeekBar android:theme="@style/Theme.AppCompat.Light" android:id="@id/brightnessSlider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="45.0dip" android:max="100" android:progress="100" android:thumb="@drawable/thumb_image" />
+							<ImageView android:padding="5.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/sun_high" android:layout_alignParentRight="true" android:contentDescription="@null" />
+						</RelativeLayout>
+					</RelativeLayout>
+				</androidx.cardview.widget.CardView>
+			</RelativeLayout>
+			<RelativeLayout android:id="@id/card_view_border2" android:background="@drawable/bg_rounded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+				<androidx.cardview.widget.CardView android:id="@id/card_view_parent2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:elevation="4.0dip" app:cardCornerRadius="4.0dip">
+					<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<RelativeLayout android:id="@id/view_title2" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+							<TextView android:textSize="25.0sp" android:id="@id/text_view_title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RGB 2" android:layout_centerInParent="true" />
+						</RelativeLayout>
+						<LinearLayout android:orientation="horizontal" android:id="@id/color_palette2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_title2" android:layoutDirection="ltr">
+							<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<ImageView android:id="@id/img_r2" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/r" android:onClick="circleImageCallBack2" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_g2" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/g" android:onClick="circleImageCallBack2" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_b2" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/b" android:onClick="circleImageCallBack2" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_c2" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/c" android:onClick="circleImageCallBack2" android:contentDescription="@null" />
+							</LinearLayout>
+							<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+							<com.skydoves.colorpickerview.ColorPickerView android:layout_gravity="center_vertical" android:id="@id/colorPickerView2" android:layout_width="180.0dip" android:layout_height="180.0dip" app:actionMode="last" app:palette="@drawable/colorwheel" app:selector="@drawable/wheel" />
+							<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+							<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+								<ImageView android:id="@id/img_power2" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/power" android:onClick="circleImageCallBack2" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_w2" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/w" android:onClick="circleImageCallBack2" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_y2" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/y" android:onClick="circleImageCallBack2" android:contentDescription="@null" />
+								<ImageView android:id="@id/img_p2" android:focusable="true" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/p" android:onClick="circleImageCallBack2" android:contentDescription="@null" />
+							</LinearLayout>
+						</LinearLayout>
+						<RelativeLayout android:id="@id/brightnessLayout2" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/color_palette2" android:layoutDirection="ltr">
+							<ImageView android:padding="5.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/sun_low" android:layout_alignParentLeft="true" android:contentDescription="@null" />
+							<SeekBar android:theme="@style/Theme.AppCompat.Light" android:id="@id/brightnessSlider2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="45.0dip" android:max="100" android:progress="100" android:thumb="@drawable/thumb_image" />
+							<ImageView android:padding="5.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/sun_high" android:layout_alignParentRight="true" android:contentDescription="@null" />
+						</RelativeLayout>
+					</RelativeLayout>
+				</androidx.cardview.widget.CardView>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

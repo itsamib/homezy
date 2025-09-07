@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:layout_gravity="right" android:id="@id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رمز ورود فعلی" fontPath="fonts/IRANSansMobile.ttf" />
+	<EditText android:theme="@style/Theme.AppCompat.Light" android:layout_gravity="right" android:id="@id/txtOldPass" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:maxLength="4" android:inputType="numberPassword" android:textAlignment="center" />
+	<TextView android:layout_gravity="right" android:id="@id/textView15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="رمز ورود جدید" fontPath="fonts/IRANSansMobile.ttf" />
+	<EditText android:theme="@style/Theme.AppCompat.Light" android:layout_gravity="right" android:id="@id/txtNewPass" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:maxLength="4" android:inputType="numberPassword" android:textAlignment="center" />
+	<TextView android:layout_gravity="right" android:id="@id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="تکرار رمز ورود جدید" fontPath="fonts/IRANSansMobile.ttf" />
+	<EditText android:theme="@style/Theme.AppCompat.Light" android:layout_gravity="right" android:id="@id/txtNewPassRep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" android:maxLength="4" android:inputType="numberPassword" android:textAlignment="center" />
+	<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+		<Button android:textStyle="bold" android:textColor="#ff00b0e4" android:id="@id/btnDialogCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="انصراف" fontPath="fonts/IRANSansMobile_Bold.ttf" style="?android:buttonBarButtonStyle" />
+		<Button android:textStyle="bold" android:textColor="#ff00b0e4" android:id="@id/btnDialogAccept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="تایید" fontPath="fonts/IRANSansMobile_Bold.ttf" style="?android:buttonBarButtonStyle" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<androidx.appcompat.widget.Toolbar android:id="@id/switch_control_toolbar" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextColor="@color/colorWhite" />
+	<TextView android:id="@id/txt_log" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/switch_control_toolbar" />
+	<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" android:layoutDirection="ltr">
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+			<TextView android:id="@id/text_view_device_serial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="S/123456" />
+			<LinearLayout android:orientation="horizontal" android:id="@id/layout_control_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" android:layoutDirection="rtl" android:layout_marginStart="35.0dip" android:layout_marginEnd="35.0dip">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="مشعل:" android:layout_marginEnd="15.0dip" />
+				<TextView android:id="@id/text_torch_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="خاموش" />
+				<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+				<androidx.appcompat.widget.SwitchCompat android:id="@id/switch_power_plant_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="موتورخانه" />
+			</LinearLayout>
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+			<TextView android:textSize="40.0sp" android:id="@id/text_view_output_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+1" android:layout_centerInParent="true" android:textAlignment="center" />
+			<me.tankery.lib.circularseekbar.CircularSeekBar android:id="@id/seek_bar_output_value" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_centerInParent="true" app:cs_circle_color="#ff919191" app:cs_circle_progress_color="#ff00a594" app:cs_circle_stroke_width="15.0dip" app:cs_negative_enabled="true" app:cs_pointer_color="#ff047c70" app:cs_pointer_stroke_width="20.0dip" />
+		</RelativeLayout>
+		<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layoutDirection="ltr" android:paddingStart="20.0sp" android:paddingEnd="20.0dip">
+			<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="دمای تنظیم" />
+				<TextView android:id="@id/text_view_sett_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="73 C" />
+			</LinearLayout>
+			<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+			<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="دمای موتورخانه" />
+				<TextView android:id="@id/text_view_inside_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="70 C" />
+			</LinearLayout>
+			<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+			<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="دمای بیرون" />
+				<TextView android:id="@id/text_view_outside_temperature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-3 C" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" android:layoutDirection="ltr" android:paddingStart="20.0sp" android:paddingEnd="20.0dip">
+			<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<ImageView android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/pump" android:contentDescription="@null" />
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="پمپ ۱" />
+				<TextView android:id="@id/text_view_pump_status_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="خاموش" />
+				<TextView android:id="@id/text_view_return_temperature_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="65 C" />
+			</LinearLayout>
+			<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+			<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<ImageView android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/pump" android:contentDescription="@null" />
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="پمپ ۲" />
+				<TextView android:id="@id/text_view_pump_status_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="خاموش" />
+				<TextView android:id="@id/text_view_return_temperature_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60 C" />
+			</LinearLayout>
+			<Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+			<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<ImageView android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/pump" android:contentDescription="@null" />
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="پمپ ۳" />
+				<TextView android:id="@id/text_view_pump_status_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="خاموش" />
+				<TextView android:id="@id/text_view_return_temperature_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="74 C" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

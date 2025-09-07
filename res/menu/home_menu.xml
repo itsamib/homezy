@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="right" android:layout_gravity="right" android:layoutDirection="rtl">
+	<item android:icon="@drawable/ic_settings_black_24dp" android:id="@id/item_add_room" android:title="@string/item_add_room" />
+	<item android:icon="@drawable/ic_settings_black_24dp" android:id="@id/item_remove_room" android:title="@string/item_remove_room" />
+	<item android:icon="@drawable/ic_settings_black_24dp" android:id="@id/item_add_appliance" android:title="@string/item_add_appliance" />
+	<item android:icon="@drawable/ic_settings_black_24dp" android:id="@id/item_edit_appearance" android:title="@string/item_edit_appearance" />
+</menu>

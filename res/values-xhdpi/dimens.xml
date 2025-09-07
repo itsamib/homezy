@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="ir_button_size">65.0dip</dimen>
+<dimen name="ir_button_size_small">55.0dip</dimen>
+<dimen name="ir_button_size_smaller">55.0dip</dimen>
+<dimen name="ir_control_circle_size">175.0dip</dimen>
+</resources>

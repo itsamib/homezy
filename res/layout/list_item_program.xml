@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<RelativeLayout android:id="@id/action_layout" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<RelativeLayout android:id="@id/container_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin_slim">
+			<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:textSize="30.0sp" android:textColor="@color/coloGrayDark" android:layout_gravity="center_vertical" android:id="@id/text_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/template_clock_value" android:layout_marginEnd="10.0dip" fontPath="fonts/Roboto-Medium.ttf" />
+					<TextView android:textSize="20.0sp" android:textColor="@color/coloGray" android:layout_gravity="center_vertical" android:id="@id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/template_title" fontPath="fonts/IRANSansMobile_Medium.ttf" />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+					<TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/text_view_days_fri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/template_fri" fontPath="fonts/IRANSansMobile_Medium.ttf" />
+					<TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/text_view_days_thu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/template_thu" fontPath="fonts/IRANSansMobile_Medium.ttf" />
+					<TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/text_view_days_wed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/template_wed" fontPath="fonts/IRANSansMobile_Medium.ttf" />
+					<TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/text_view_days_tue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/template_tue" fontPath="fonts/IRANSansMobile_Medium.ttf" />
+					<TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/text_view_days_mon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/template_mon" fontPath="fonts/IRANSansMobile_Medium.ttf" />
+					<TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/text_view_days_sun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/template_sun" fontPath="fonts/IRANSansMobile_Medium.ttf" />
+					<TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/text_view_days_sat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/template_sat" fontPath="fonts/IRANSansMobile_Medium.ttf" />
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+				<ImageView android:layout_gravity="center" android:id="@id/image_device" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/device_06_ch" android:contentDescription="@null" />
+				<TextView android:textColor="@color/coloGrayDark" android:layout_gravity="center" android:id="@id/text_device_serial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/template_device_serial" />
+			</LinearLayout>
+		</RelativeLayout>
+		<ImageView android:id="@id/titleSeparator" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/container_item" android:contentDescription="@null" />
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/parent_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<ImageView android:background="@color/colorAccent" android:layout_width="2.0dip" android:layout_height="25.0dip" android:contentDescription="@null" />
+		<TextView android:id="@id/text_command_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/template_title" />
+		<include android:id="@id/view_round_scenario_item" android:layout_width="60.0dip" android:layout_height="60.0dip" layout="@layout/list_item_switches" />
+		<include android:id="@id/view_new_scenario_item" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="wrap_content" layout="@layout/list_item_switches_new" />
+		<ImageView android:id="@id/image_view_end_bar" android:background="@color/colorAccent" android:layout_width="2.0dip" android:layout_height="25.0dip" android:contentDescription="@null" />
+		<TextView android:id="@id/text_view_delay_value" android:background="@drawable/rounded_border_edit_text_dark" android:padding="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/template_delay_value" />
+		<EditText android:theme="@style/Base.Theme.AppCompat.Light" android:id="@id/edit_delay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/template_delay_fa" android:inputType="numberDecimal" />
+	</LinearLayout>
+</RelativeLayout>

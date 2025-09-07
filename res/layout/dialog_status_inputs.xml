@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:gravity="center" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_header_height">
+		<TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="وضعیت ورودی‌ها" fontPath="fonts/IRANSansMobile_Bold.ttf" />
+	</RelativeLayout>
+	<ImageView android:id="@id/titleSeparator" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="3.0dip" android:contentDescription="@null" />
+	<ScrollView android:id="@id/view_back" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text=" " android:layout_weight="1.0" />
+				<TextView android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="وضعیت" android:layout_weight="1.0" android:textAlignment="center" />
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="وری ۱" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_1_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۲" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_2_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۳" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_3_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۴" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_4_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۵" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_5_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۶" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_6_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۷" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_7_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۸" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_8_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_9" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۹" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_9_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۱۰" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_10_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_11" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۱۱" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_11_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_input_name_12" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="ورودی ۱۲" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/input_12_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<ImageView android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="5.0dip" android:contentDescription="@null" />
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_scenario_name_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="سناریو ۱" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/scenario_1_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_scenario_name_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="سناریو ۲" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/scenario_2_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_scenario_name_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="سناریو ۳" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/scenario_3_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layoutDirection="rtl">
+				<TextView android:gravity="center" android:id="@id/text_scenario_name_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="سناریو ۴" android:layout_weight="1.0" android:textAlignment="center" />
+				<RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/scenario_4_s" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="فعال" android:layout_weight="1.0" android:textAlignment="center" />
+				</RelativeLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

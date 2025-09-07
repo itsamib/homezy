@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="first_days_week_array"><item>شنبه</item><item>یکشنبه</item><item>دوشنبه</item></string-array>
+<string-array name="ip_mode_array"><item>Auto</item><item>Static</item></string-array>
+<string-array name="last_abbr_week_array"><item>پ</item><item>چ</item><item>س</item><item>د</item><item>ی</item><item>ش</item></string-array>
+<string-array name="last_day_abbr_week_array"><item>ج</item></string-array>
+<string-array name="last_day_week_array"><item>جمعه</item></string-array>
+<string-array name="register_modes"><item>شماره موبایل</item><item>Email</item></string-array>
+<string-array name="second_days_week_array"><item>سه‌شنبه</item><item>چهارشنبه</item><item>پنجشنبه</item></string-array>
+<string-array name="week_days_array"><item>شنبه</item><item>یکشنبه</item><item>دوشنبه</item><item>سه‌شنبه</item><item>چهارشنبه</item><item>پنجشنبه</item><item>جمعه</item></string-array>
+</resources>

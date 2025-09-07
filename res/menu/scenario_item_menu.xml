@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@id/item_change_icon" android:title="@string/item_change_icon" />
+	<item android:id="@id/item_edit_scenario" android:title="@string/item_edit_appliance" />
+	<item android:id="@id/item_add_ext_scenario" android:title="@string/item_add_ext_scenario" />
+	<item android:id="@id/item_add_bus_scenario" android:title="@string/item_add_bus_scenario" />
+	<item android:id="@id/item_remove_scenario" android:title="@string/item_remove_appliance" />
+</menu>

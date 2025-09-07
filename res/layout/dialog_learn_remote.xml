@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:gravity="center" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_header_height">
+		<TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_learn_remote_title" fontPath="fonts/IRANSansMobile_Bold.ttf" />
+	</RelativeLayout>
+	<ImageView android:id="@id/titleSeparator" android:background="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="3.0dip" android:contentDescription="@null" />
+	<RelativeLayout android:gravity="center" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+		<TextView android:id="@id/text_view_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dialog_learn_remote_message" android:textAlignment="center" />
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+			<Button android:textStyle="bold" android:textColor="#ff00b0e4" android:id="@id/btnDialogCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="انصراف" fontPath="fonts/IRANSansMobile_Bold.ttf" style="?android:buttonBarButtonStyle" />
+			<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<Button android:textStyle="bold" android:textColor="#ff00b0e4" android:id="@id/btnRemoteLearning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="یادگیری" fontPath="fonts/IRANSansMobile_Bold.ttf" style="?android:buttonBarButtonStyle" />
+				<Button android:textStyle="bold" android:textColor="#ff00b0e4" android:id="@id/btnRemoteAccept" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="تایید" fontPath="fonts/IRANSansMobile_Bold.ttf" style="?android:buttonBarButtonStyle" />
+			</RelativeLayout>
+			<ProgressBar android:layout_gravity="center_vertical" android:id="@id/progress_bar_learning" android:visibility="invisible" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>
